@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/appBLE_pem3.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="D:/SensorTag_Source_2/simplelink/ble_cc26xx_2_01_00_44423/Projects/ble/SensorTag/CC26xx/CCS/Config/appBLE.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/appBLE_pem3.mak" src="package.bld"/>
+        <srcFile name="package/cfg/appBLE_pem3.oem3.dep" src="package/cfg/appBLE_pem3.c"/>
+        <srcFile name="package/cfg/appBLE_pem3.dep" src="package/cfg/appBLE_pem3.cfg"/>
+        <srcFile name="package/cfg/appBLE.xem3.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.arm.elf.M3"
+            version="ti.targets.arm.elf.M3{1,0,5.2,5"
+            rawVersion="5.2.5"
+            platform="ti.platforms.simCM3"
+            isa="v7M"
+            suffix="em3"
+            rootDir="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5"
+            os="undefined"
+            rts="ti.targets.arm.rtsarm">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="appBLE"
+        pname="appBLE.pem3"
+        target="ti.targets.arm.elf.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/appBLE_pem3.cfg"
+        xCfgPrefix="package/cfg/appBLE_pem3"
+        cfgScript="D:/SensorTag_Source_2/simplelink/ble_cc26xx_2_01_00_44423/Projects/ble/SensorTag/CC26xx/CCS/Config/appBLE.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="appBLE"
+        pname="appBLE.xem3"
+        target="ti.targets.arm.elf.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        xCfgScript="package/cfg/appBLE_pem3.cfg"
+        xCfgPrefix="package/cfg/appBLE_pem3"
+        cfgScript="D:/SensorTag_Source_2/simplelink/ble_cc26xx_2_01_00_44423/Projects/ble/SensorTag/CC26xx/CCS/Config/appBLE.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="appBLE.xem3"
+        args=""
+        groupName="appBLE.xem3"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

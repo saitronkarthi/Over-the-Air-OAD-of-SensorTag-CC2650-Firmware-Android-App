@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:text="Current_Image" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:text="New_Image" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_load_c"
+            style="?android:attr/buttonStyle"
+            android:layout_width="63dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:onClick="onLoadCustom"
+            android:visibility="invisible"
+            android:text="load_image_c" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

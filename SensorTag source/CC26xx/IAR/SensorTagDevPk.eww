@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\util\BIM_extflash\CC26xx\IAR\BIM_extflash.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Application\CC2650\CC2650AppLCD.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Application\CC2650\CC2650AppLight.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Stack\CC2650\CC2650Stack.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>ALL</name>
+      <member>
+        <project>CC2650Stack</project>
+        <configuration>FlashROM</configuration>
+      </member>
+      <member>
+        <project>CC2650AppLCD</project>
+        <configuration>FlashOnlyOAD</configuration>
+      </member>
+      <member>
+        <project>CC2650AppLight</project>
+        <configuration>FlashOnlyOAD</configuration>
+      </member>
+      <member>
+        <project>BIM_extflash</project>
+        <configuration>FlashOnly_SensorTag</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

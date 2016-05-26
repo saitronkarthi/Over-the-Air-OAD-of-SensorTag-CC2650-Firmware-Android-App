@@ -1,0 +1,27 @@
+C:/Python27/Scripts/hexmerge.py -o D:\testbin\UTA_OAD212R1.hex D:\testbin\SensorTagStack.hex D:\testbin\BIM_ExtFlash.hex
+
+C:\Python27\Scripts\hex2bin.py  D:\testbin\UTA_OAD212R.hex D:\testbin\UTA_OAD212R.bin 
+
+BIM_ExtFlash
+
+C:/Python27/Scripts/hexmerge.py -o D:\testbin\OAD_FULL_IMAGE_BIN.hex D:\testbin\OAD_FULL_IMAGE.hex D:\testbin\BIM_ExtFlash.hex
+
+C:\Python27\Scripts\hex2bin.py D:\testbin\OAD_FULL_IMAGE_BIN.hex  D:\testbin\OAD_FULL_IMAGE_BIN.bin
+C:\Python27\Scripts\hex2bin.py D:\testbin\SensorTagBin\SensorTagSuper55.hex  D:\testbin\SensorTagSuper55.bin
+
+python C:/Python27/Scripts/hexmerge.py -o D:\testbin\SensorTagSuper.hex -r 0000:1FFFF D:\testbin\SensorTagBin\SensorTag.hex:0000:1EFFF D:\testbin\SensorTagBin\SensorTagStack.hex D:\testbin\SensorTagBin\BIM_ExtFlash.hex:1F000:1FFFF --overlap=error 
+
+$ C:\Python27\Scripts>python hexmerge.py -o SensorTagSuper.hex -r 0000:1FFFF SensorTag.hex:0000:1EFFF SensorTagStack.hex BIM_ExtFlash.hex:1F000:1FFFF --overlap=error 
+
+hexmerge.py -o D:\testbin\SensorTagSuper.hex -r 0000:1FFFF D:\testbin\SensorTag.hex:0000:1EFFF D:\testbin\SensorTagStack.hex D:\testbin\BIM_ExtFlash.hex:1F000:1FFFF --overlap=error
+
+
+python C:/Python27/Scripts/hexmerge.py -o D:\testbin\SimpleBLEPeripheralSuper.hex -r 0000:1FFFF D:\testbin\SimpleBLEPeripheral.hex:0000:1EFFF D:\testbin\SimpleBLEPeripheralStack.hex D:\testbin\BIM_ExtFlash.hex:1F000:1FFFF --overlap=error 
+
+C:\Python27\Scripts\hex2bin.py  D:\testbin\SensorTagBin\SimpleBLEPeripheralSuper55.hex D:\testbin\SimpleBLEPeripheralSuper55.bin
+
+python "C:/Python27/Scripts/hexmerge.py" -o "${PROJECT_LOC}/FlashOnly_ST_OAD_ExtFlash/OAD_IMAGE_FULL.hex" -r "1000:1EFFF" --overlap=error "${PROJECT_LOC}/FlashOnly_ST_OAD_ExtFlash/${ProjName}.hex" "${PROJECT_LOC}/../SimpleBLEPeripheralStack/FlashROM/SimpleBLEPeripheralStack 
+
+
+
+python C:/Python27/Scripts/hexmerge.py -o D:\testbin\SimpleBLEPeripheralSuper.hex -r 0000:1FFFF D:\testbin\SimpleBLEPeripheral.hex:0000:1EFFF D:\testbin\SimpleBLEPeripheralStack.hex:F000:1CFFF D:\testbin\BIM_ExtFlash.hex:1F000:1FFFF --overlap=error 
